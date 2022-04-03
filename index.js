@@ -62,7 +62,7 @@ client.on('ready', () => {
             'language',
             'prefix',
             'requiredrole',
-            'slash',
+            //'slash',
             'channelonly'
         ]
     });

@@ -6,7 +6,7 @@ export default {
     description: 'rolls a number between 1 and the given number',
     
     slash: 'both', // false enables legacy only. both wil make it so bot work
-    testOnly: true, //false will allow to be used globally
+    testOnly: false, //false will allow to be used globally
     options: [
         {
             name: 'number',

@@ -22,10 +22,10 @@ client.on('ready', () => {
     }
 
     const wok = new WOKCommands(client, {
-        commandDir: path.join(__dirname, 'commands'),//name of local command fiels
-        featureDir: path.join(__dirname, 'features'),
+        commandDir: path.join(__dirname, 'commands'), // Commands file directory
+        featureDir: path.join(__dirname, 'features'), //Features file directory 
         typeScript: false, // allows importing of .ts files
-        testServers: ['791848596332740608', '87173473012572160'], //test server id
+        testServers: ['791848596332740608', '87173473012572160'], //test server id , '87173473012572160' - rs id
         dbOptions,
         mongoUri: process.env.MONGO_URI,
         botOwners:['91500245225070592'],
@@ -34,7 +34,7 @@ client.on('ready', () => {
             'language',
             'prefix',
             'requiredrole',
-            'slash',
+            //'slash',
             'channelonly'
 
         ]

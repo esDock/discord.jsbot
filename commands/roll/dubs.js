@@ -4,7 +4,7 @@ exports.default = {
     category: 'dice',
     description: 'tres to roll dubs.',
     slash: 'both',
-    testOnly: true,
+    testOnly: false,
     callback: ({ interaction, message }) => {
         if (interaction) {
             interaction.reply({
