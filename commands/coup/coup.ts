@@ -9,7 +9,7 @@ export default {
     slash: false, // false enables legacy only. both wil make it so bot work
     testOnly: true, //false will allow to be used globally
 
-callback: async ({ guild, message, }) => {
+callback: async ({ guild, message, interaction }) => {
         //rs id 792856600825954314
         //ts id 792867680842940459
 
@@ -27,7 +27,7 @@ callback: async ({ guild, message, }) => {
             }
 
             else {
-                const cKingGet = kingRole?.members.map(m=>m.user.id); // guild member object array?
+                const cKingGet = kingRole?.members.map(m=>m.user.id); // grabs user of who has the king role!
 
                 const cKing = message.guild?.members.cache.get(String(cKingGet)); //actually guild member object
         
