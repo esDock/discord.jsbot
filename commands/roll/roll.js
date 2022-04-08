@@ -8,7 +8,7 @@ exports.default = {
     category: 'dice',
     description: 'rolls a number between 1 and the given number',
     slash: 'both',
-    testOnly: false,
+    testOnly: true,
     options: [
         {
             name: 'number',

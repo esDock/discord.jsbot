@@ -6,7 +6,7 @@ export default {
     description: 'tres to roll dubs.',
     
     slash: 'both', // false enables legacy only. both wil make it so bot work
-    testOnly: false, //false will allow to be used globally
+    testOnly: true, //false will allow to be used globally
 
     callback: ({ interaction, message }) => {
         if (interaction) {
